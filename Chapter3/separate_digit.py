@@ -1,13 +1,13 @@
-for digits in  range(1):
-	
-	digit = int(input("Enter numbers: "))
+number = int(input("Enter a five digit number: "))
 
-	if digit >= 10_000 and digits <= 99_999: 
-	
-		first_num = digit // 10000 % 10
-		second_num = digit // 1000 % 10
-		third_num = digit // 100 % 10
-		fourth_num = digit // 10 % 10
-		fifth_num = digit % 10
+divisor = 10_000
 
-print(f"{first_num} {second_num} {third_num} {fourth_num} {fifth_num}" , end=" ")
+while number != 0:
+
+	digit = number // divisor
+
+	print(digit, end= "\t")
+
+	number = number % divisor
+
+	divisor = divisor // 10

@@ -1,11 +1,13 @@
 principal = int(input("Enter the principal: "))
 
 rate = int(input("Enter the rate: "))
+
 rate_percent = rate / 100
 
 for years in range (1,31):
-	noOfYears = int(input(f"Enter the years {years}: "))
 	
-	amount = principal * (1 + rate)**noOfYears
+	principal = principal * (1 + rate_percent)
 
-	print("The amount of money you get each year %2d " %amount)
+	print(f"The amount of money you get in year {years} is {principal:,.2f}" )
+
+	
