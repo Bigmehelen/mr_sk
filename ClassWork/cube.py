@@ -1,5 +1,6 @@
 def get_cube(number):
-	if number <= 10:
+	numbers = range(1,11)
+	if number in numbers:
 		return number**3
 	else:
-		return "invalid number"
+		raise ValueError

@@ -1,8 +1,9 @@
-question_1 = input("What is your problem?: ");
+question_one_prompt = "What is your problem?: "
+input(question_one_prompt);
 
-question_2 = input("Have you had this problem before(yes or no)?: ").lower();
+response = input("Have you had this problem before(yes or no)?: ").lower();
 
-match question_2:
+match response:
 	case "yes":
 		print("Well, you have it again.")
 	case "no":
